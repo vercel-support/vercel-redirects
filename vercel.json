@@ -1,19 +1,4 @@
 {
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers" : [
-        {
-          "key" : "X-Frame-Options",
-          "value" : "DENY"
-        },
-        {
-          "key" : "Content-Type",
-          "value" : "text/html; charset=UTF-8"
-        }
-      ]
-    }
-  ],
   "routes": [
     { "handle": "filesystem"},
     { "src": "/(.*)", "status": 404, "headers": { "Location" : "/404"} }
